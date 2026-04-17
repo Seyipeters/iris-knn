@@ -27,6 +27,19 @@ The dataset used is `iris_with_missing.csv`, which includes measurements of sepa
 
 ## Insights
 
+After executing the notebook, the KNN model achieved the following results:
+
+- **Best Hyperparameters**: k=3, distance metric=Manhattan (selected via validation set tuning).
+- **Test Set Performance**:
+  - Accuracy: 93.33%
+  - Precision: 94.44%
+  - Recall: 93.33%
+  - F1-Score: 93.27%
+  - ROC-AUC: 96.44%
+- **Leave-One-Out Cross-Validation Accuracy**: 94.67%
+
+The model performed well on the Iris dataset, with high accuracy and robustness confirmed by LOO CV. The confusion matrix showed minimal misclassifications.
+
 - The Iris dataset is small and well-suited for KNN, which performed well.
 - Standardization of features is crucial for distance-based algorithms like KNN.
 - Hyperparameter tuning on the validation set helped optimize performance.
